@@ -1284,7 +1284,7 @@ int runAnimationMode(uint8_t mode, uint16_t step)
       return nuclearMode(step, 3, 0, 0, 0, 10, 20, 0, 150 );
     case 7:
       if ((state & B00000100) != 0) { return 0; };
-      return nuclearMode(4, 3, 12, 20, 255, 0, 2, 0, 250 ); // york rose
+      return breath(step, 50, 1, 40); // patched out york rose
     case 8:
       if ((state & B00000001) != 0) { return 0; };
       return policeMode(step);
